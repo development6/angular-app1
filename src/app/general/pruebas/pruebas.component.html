@@ -1,0 +1,61 @@
+<h2>{{Titulo}}</h2>
+<hr>
+<p>Fecha de hoy : {{Fecha2}}</p>
+<br>
+<button class="btn btn-primary" (click)="obtenerDia()">Obtener Dia</button>
+<br>
+<hr>
+<!--<form (ngSubmit) = "insertar2($event)">
+<button type="submit" class="btn btn-success">Ingresar 2</button>
+</form>-->
+
+<form (ngSubmit)="insertar()">
+    <h2>{{Titulo2}}</h2>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email address</label>
+        <input [(ngModel)]="email" name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input [(ngModel)]="password" name="password" type="password" class="form-control" id="password">
+    </div>
+    <button type="submit" class="btn btn-success">Ingresar</button>
+</form>
+{{email}} {{password}}
+<br>
+<hr>
+<p>Fecha de hoy : {{Fecha | date:'yyyy-MM-dd'}}</p>
+<p>Fecha de hoy : {{Fecha1}}</p>
+<!-- ngIf -->
+<!-- llamado al get de la variable-->
+<p>Mes actual: {{ getMesNumber }}</p>
+<p>Dia actual: {{ getDiaNumber }}</p>
+
+<input type="text" class="form-control">
+<button class="btn btn-primary" (click)="agregar()">Agregar Dia</button>
+<hr>
+<!-- Bindings -->
+
+<button class="btn btn-primary" (click)="sumar()">Sumar</button>
+<h3>{{getContadorNumber}}</h3>
+<button class="btn btn-primary" (click)="restar()">Restar</button>
+<br>
+<!-- ngFor -->
+<ul>
+    <li *ngFor="let dia of dias_semana; let i = index">
+
+        <b *ngIf="getDiaNumber == i; else templateName"> {{dia}}</b>
+
+        <ng-template #templateName>
+            {{dia}}
+        </ng-template>
+    </li>
+</ul>
+
+
+
+<h3>El elemento eliminado es: {{eliminado}}</h3>
+<button class="btn btn-primary" (click)="eliminar()">eliminar dia</button>
+
+<hr><br>

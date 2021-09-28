@@ -14,6 +14,8 @@ import { NotFoundComponent } from './compartida/not-found/not-found.component';
 import { ConstruccionComponent } from './construccion/construccion.component';
 import { PruebasComponent } from './general/pruebas/pruebas.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -31,6 +33,7 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

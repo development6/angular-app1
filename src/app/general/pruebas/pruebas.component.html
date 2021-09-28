@@ -9,8 +9,8 @@
 <button type="submit" class="btn btn-success">Ingresar 2</button>
 </form>-->
 
-<form (ngSubmit)="insertar()">
-    <h2>{{Titulo2}}</h2>
+<form (ngSubmit) = "insertar()">
+    <h2>{{Titulo2}}</h2> 
     <div class="mb-3">
         <label for="email" class="form-label">Email address</label>
         <input [(ngModel)]="email" name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp">
@@ -23,6 +23,7 @@
     <button type="submit" class="btn btn-success">Ingresar</button>
 </form>
 {{email}} {{password}}
+
 <br>
 <hr>
 <p>Fecha de hoy : {{Fecha | date:'yyyy-MM-dd'}}</p>

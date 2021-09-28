@@ -13,7 +13,7 @@ import { ProductosComponent } from './general/productos/productos.component';
 import { NotFoundComponent } from './compartida/not-found/not-found.component';
 import { ConstruccionComponent } from './construccion/construccion.component';
 import { PruebasComponent } from './general/pruebas/pruebas.component';
-//import { FormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,8 +30,7 @@ import { PruebasComponent } from './general/pruebas/pruebas.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    //siempre se debe importar
-    //FormsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

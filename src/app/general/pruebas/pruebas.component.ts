@@ -21,6 +21,9 @@ export class PruebasComponent {
   eliminado:null|string|undefined = null;
   Contador: number = 0;
 
+  email: string|null = "";
+  password: string|null = "";
+
   dias_semana:string[] = ['Domingo','Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'];
 //for (let dia of dias_semana)
 /*

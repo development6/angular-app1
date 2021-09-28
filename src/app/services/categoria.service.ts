@@ -24,8 +24,8 @@ export class CategoriaService {
     this.http.get('assets/data/categorias.json')
     .subscribe( (respuesta: any) => {
 
-      console.log("Respuesta: ",respuesta);
-      console.log("Categorias: ",respuesta['frutas']);
+      //console.log("Respuesta: ",respuesta);
+      //console.log("Categorias: ",respuesta['frutas']);
     });
   }
   private cargarCategorias(){
@@ -35,7 +35,7 @@ export class CategoriaService {
     this.http.get('assets/data/categorias.json')
     .subscribe( (respuesta: Categoria) => {
       this.categoria = respuesta;
-      console.log("Respuesta: ",this.categoria);
+      //console.log("Respuesta: ",this.categoria);
     });
   }
 

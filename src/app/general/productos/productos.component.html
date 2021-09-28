@@ -1,13 +1,16 @@
 <div class="album py-5 bg-light">
     <div class="container">
 
+
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
+        <div class="col" *ngFor="let item of productosService.productos">
+          {{item.nombre}}
           <div class="card shadow-sm">
             <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Peras y Manzanas" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#555105c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Peras y Manzanas</text></svg>-->
             <img src="assets/img/peras.jpeg" alt="peras">
             <div class="card-body">
               <p class="card-text">esto es un producto.</p>
+              <p class="card-text">Categoria: {{categoriaService.categoria.frutas}}</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">Oferta</button>
@@ -18,7 +21,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+      <!-- <div class="col">
           <div class="card shadow-sm">
             <img src="assets/img/manzanas.jpeg" alt="manzanas">
             <div class="card-body">
@@ -146,7 +149,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>-->
       </div>
     </div>
   </div>

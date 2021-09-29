@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './compartida/header/header.component';
 import { FooterComponent } from './compartida/footer/footer.component';
 import { AsideComponent } from './compartida/aside/aside.component';
-import { CategoriaComponent } from './general/categoria/categoria.component';
 import { ProductosComponent } from './general/productos/productos.component';
 import { NotFoundComponent } from './compartida/not-found/not-found.component';
 import { ConstruccionComponent } from './construccion/construccion.component';
-import { PruebasComponent } from './general/pruebas/pruebas.component';
+
+//modulos
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginModule } from './login/login.module';
+import { GeneralModule } from './general/general.module';
 
 
 @NgModule({
@@ -23,17 +25,17 @@ import { HttpClientModule } from '@angular/common/http';
     HeaderComponent,
     FooterComponent,
     AsideComponent,
-    CategoriaComponent,
     ProductosComponent,
     NotFoundComponent,
-    ConstruccionComponent,
-    PruebasComponent
+    ConstruccionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    LoginModule,
+    GeneralModule
   ],
   providers: [],
   bootstrap: [AppComponent]

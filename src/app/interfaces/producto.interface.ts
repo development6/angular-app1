@@ -3,8 +3,5 @@ export interface Producto {
     nombre?: string;
     descripcion?: string;
     precio?: number | string;
+    imagen?: string;
 }
-
-export interface RootObject {
-    productos: Producto[];
-  }

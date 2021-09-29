@@ -3,31 +3,41 @@
             "id": 1,
             "nombre": "Pera",
             "descripcion": "El rincon de Soto",
-            "precio": 12.34
+            "precio": 12.34,
+            "imagen": "assets/img/peras.jpeg",
+            "cantidad": 10
         },
         {
             "id": 2,
             "nombre": "Kiwi",
             "descripcion": "Zespri",
-            "precio": 2.34
+            "precio": 2.34,
+            "imagen": "assets/img/peras.jpeg",
+            "cantidad": 10
         },
         {
             "id": 3,
             "nombre": null,
             "descripcion": null,
-            "precio": null
+            "precio": null,
+            "imagen": "assets/img/peras.jpeg",
+            "cantidad": 10
         },
         {
             "id": 4,
             "nombre": null,
             "descripcion": null,
-            "precio": null
+            "precio": null,
+            "imagen": "assets/img/peras.jpeg",
+            "cantidad": 10
         },
         {
             "id": 5,
             "nombre": "Melocotones",
             "descripcion": "Natur",
-            "precio": "3.55"
+            "precio": "3.55",
+            "imagen": "assets/img/peras.jpeg",
+            "cantidad": 10
         }
     ]
 }

@@ -2,6 +2,15 @@
 <hr>
 <p>Fecha de hoy : {{Fecha2}}</p>
 <br>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+</button>
+
+<!-- Modal componente hijo-->
+<app-modal></app-modal>
+<br>
+<hr>
 <button class="btn btn-primary" (click)="obtenerDia()">Obtener Dia</button>
 <br>
 <hr>
@@ -9,8 +18,8 @@
 <button type="submit" class="btn btn-success">Ingresar 2</button>
 </form>-->
 
-<form (ngSubmit) = "insertar()">
-    <h2>{{Titulo2}}</h2> 
+<form (ngSubmit)="insertar()">
+    <h2>{{Titulo2}}</h2>
     <div class="mb-3">
         <label for="email" class="form-label">Email address</label>
         <input [(ngModel)]="email" name="email" type="email" class="form-control" id="email" aria-describedby="emailHelp">

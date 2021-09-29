@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Producto,RootObject } from '../interfaces/producto.interface';
+import { Producto } from '../interfaces/producto.interface';
 
 @Injectable({
     providedIn: 'root'
@@ -16,6 +16,7 @@ export class ProductosService {
     private obtenerProductos() {
         this.http.get('https://learsixela.github.io/productos_json/productos.json').subscribe((resp: any) => {
             this.productos = resp.productos;
+            console.log(this.productos);
         });
     }
 

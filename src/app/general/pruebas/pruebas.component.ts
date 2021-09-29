@@ -10,9 +10,13 @@ import { Component } from '@angular/core';
 //export class PruebasComponent implements OnInit {
 export class PruebasComponent {
   Titulo: string = 'Curso de Angular Básico';
-  Titulo2: string= 'Formularios';
+  Titulo2: string= 'Alerta';
+  Detalle: string = 'Esta a punto de realizar cambios en los productos';
+  Accion: string = 'Guardar Producto';
+
 
   Fecha: number = new Date().getTime();
+  
   Fecha1: string = formatDate(new Date(), 'dd/MM/yyyy', 'en');
   Fecha2: string = new Date().toString();
   Mes: number = new Date().getMonth() + 1;

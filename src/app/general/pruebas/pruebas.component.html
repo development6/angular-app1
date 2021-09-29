@@ -4,11 +4,11 @@
 <br>
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Launch demo modal
+    Desplegar información...
 </button>
 
 <!-- Modal componente hijo-->
-<app-modal></app-modal>
+<app-modal [titulo]="Titulo2" [detalle]="Detalle" [accion]="Accion" [Fecha]="Fecha1"></app-modal>
 <br>
 <hr>
 <button class="btn btn-primary" (click)="obtenerDia()">Obtener Dia</button>

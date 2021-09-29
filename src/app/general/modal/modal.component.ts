@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-modal',
@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./modal.component.sass']
 })
 export class ModalComponent implements OnInit {
+
+  @Input() titulo:any = null;
+  @Input() detalle:any = null;
+  @Input() accion:any = null;
+  @Input() Fecha:any = null;
 
   constructor() { }
 

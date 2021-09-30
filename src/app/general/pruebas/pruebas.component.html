@@ -8,7 +8,8 @@
 </button>
 
 <!-- Modal componente hijo-->
-<app-modal [titulo]="Titulo2" [detalle]="Detalle" [accion]="Accion" [Fecha]="Fecha1"></app-modal>
+<app-modal [titulo]="Titulo2" [detalle]="Detalle" [accion]="Accion" [Fecha]="Fecha1" (propagar)="capturarVariable($event)"></app-modal>
+
 <br>
 <hr>
 <button class="btn btn-primary" (click)="obtenerDia()">Obtener Dia</button>

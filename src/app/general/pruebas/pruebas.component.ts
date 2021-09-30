@@ -14,7 +14,6 @@ export class PruebasComponent {
   Detalle: string = 'Esta a punto de realizar cambios en los productos';
   Accion: string = 'Guardar Producto';
 
-
   Fecha: number = new Date().getTime();
   
   Fecha1: string = formatDate(new Date(), 'dd/MM/yyyy', 'en');
@@ -24,6 +23,7 @@ export class PruebasComponent {
   Dia: number|null = null;
   eliminado:null|string|undefined = null;
   Contador: number = 0;
+  //mensaje: string = "";
 
   email: string|null = "";
   password: string|null = "";
@@ -81,5 +81,9 @@ export class PruebasComponent {
     console.log(" metodo insertar 2...");
     event.preventDefault();
     console.log(event);
+  }
+
+  capturarVariable(mensaje: any): void {
+    console.log("capturarVariable...", mensaje);
   }
 }
